@@ -1,6 +1,6 @@
 // The SDK is declarations alone, and tsc, under tsconfig.json, refuses runtime code in a
 // declaration file, run against scratch trees.
-// Adapted from spike-html-packages (3cdac61): test/unit/declarations.test.js, its SDK half.
+// Adapted from spike-html-packages (7fb31a8): test/unit/declarations.test.js, its SDK half.
 
 import assert from "node:assert/strict";
 import { spawnSync } from "node:child_process";

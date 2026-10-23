@@ -10,7 +10,7 @@ follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and the packag
 
 ### Added
 
-- The SDK layer, moved from spike-html-packages (3cdac61): the API client, auth, router, and
+- The SDK layer, moved from spike-html-packages (7fb31a8): the API client, auth, router, and
   domain-service declarations, types only.
 - The release by tag: `v<version>`, whose tree is the pack, with the tarball on its GitHub
   release.

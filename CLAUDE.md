@@ -1,6 +1,6 @@
 # spike-html-packages-sdk
 
-The sdk layer of spike-html-packages, a `code` project managed with the marathon workflow.
+The SDK layer of spike-html-packages, a `code` project managed with the marathon workflow.
 Its goal lives in the coordinator's roadmap, `standards-lab/context/roadmap.toml`, under
 `experiment.html.spike-html-packages`, whose record is in spike-html-packages.
 
