@@ -75,15 +75,15 @@ describe("release pack", () => {
     "a pack without its README": [remove("README.md"), "the pack has no README.md"],
     "an export at a missing file": [
       (_, copy) => (copy.exports["./gone.js"] = { types: "./dist/gone.d.ts" }),
-      'exports["./gone.js"] types points at ./dist/gone.d.ts, which isn\'t built',
+      'exports["./gone.js"] resolves to ./dist/gone.d.ts, which isn\'t built',
     ],
     "a types target outside dist/": [
       (_, copy) => (copy.exports["./api.js"] = { types: "./src/api.d.ts" }),
-      'exports["./api.js"] types points at ./src/api.d.ts, which isn\'t built',
+      'exports["./api.js"] resolves to ./src/api.d.ts, which isn\'t built',
     ],
     "a declaration exported as a runtime module": [
       (_, copy) => (copy.exports["./*.js"] = { types: "./dist/*.d.ts", default: "./dist/*.js" }),
-      'exports["./router.js"] default points at ./dist/router.js, which isn\'t built',
+      'exports["./router.js"] resolves to ./dist/router.js, which isn\'t built',
     ],
     "a built file no export reaches": [
       (_, copy) => delete copy.exports["./*.js"],
